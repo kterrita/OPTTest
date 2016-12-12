@@ -13,6 +13,7 @@ public class IPSolution {
         String secondIP = reader.readLine();
 
         printIpRange(firstIP, secondIP);
+        reader.close();
     }
 
     //вывод в консоль диапазона адресов
