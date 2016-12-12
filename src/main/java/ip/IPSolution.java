@@ -1,3 +1,5 @@
+package ip;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -13,6 +15,7 @@ public class IPSolution {
         printIpRange(firstIP, secondIP);
     }
 
+    //вывод в консоль диапазона адресов
     private static void printIpRange(String startIp, String endIP) {
         long start = ipToLong(startIp);
         long end = ipToLong(endIP);
@@ -22,6 +25,7 @@ public class IPSolution {
         }
     }
 
+    //конвертация адреса в десятиричную сисметму исчисления
     private static long ipToLong(String IPAddress) {
         long result = 0;
 
@@ -37,6 +41,7 @@ public class IPSolution {
         return result;
     }
 
+    //конвертация десятиричного адреса в стандартный строковый вид
     private static String longToIp(long ip) {
         StringBuilder result = new StringBuilder(15);
 
