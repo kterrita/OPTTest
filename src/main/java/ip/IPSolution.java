@@ -17,9 +17,9 @@ public class IPSolution {
     }
 
     //вывод в консоль диапазона адресов
-    private static void printIpRange(String startIp, String endIP) {
+    private static void printIpRange(String startIp, String endIp) {
         long start = ipToLong(startIp);
-        long end = ipToLong(endIP);
+        long end = ipToLong(endIp);
 
         for (long i = start + 1; i < end; i++) {
             System.out.println(longToIp(i));
@@ -27,10 +27,10 @@ public class IPSolution {
     }
 
     //конвертация адреса в десятиричную сисметму исчисления
-    public static long ipToLong(String IPAddress) {
+    public static long ipToLong(String IpAddress) {
         long result = 0;
 
-        String[] ipArray = IPAddress.split("\\.");
+        String[] ipArray = IpAddress.split("\\.");
 
         for (int i = 3; i >= 0; i--) {
 
@@ -42,7 +42,7 @@ public class IPSolution {
         return result;
     }
 
-    //конвертация десятиричного адреса в стандартный строковый вид
+    //конвертация десятиричного адреса в "стандартный" строковый вид
     public static String longToIp(long ip) {
         StringBuilder result = new StringBuilder(15);
 
