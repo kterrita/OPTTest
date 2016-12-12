@@ -27,7 +27,7 @@ public class IPSolution {
     }
 
     //конвертация адреса в десятиричную сисметму исчисления
-    private static long ipToLong(String IPAddress) {
+    public static long ipToLong(String IPAddress) {
         long result = 0;
 
         String[] ipArray = IPAddress.split("\\.");
@@ -43,7 +43,7 @@ public class IPSolution {
     }
 
     //конвертация десятиричного адреса в стандартный строковый вид
-    private static String longToIp(long ip) {
+    public static String longToIp(long ip) {
         StringBuilder result = new StringBuilder(15);
 
         for (int i = 0; i < 4; i++) {

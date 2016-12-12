@@ -28,7 +28,7 @@ public class PhoneBookSolution {
     }
 
     //вывод в консоль номеров заданного абонента
-    private static void printNumbers(String name) {
+    public static void printNumbers(String name) {
         boolean exist = false;
         for (Map.Entry<String, List<String>> pair : phoneBook.entrySet()) {
             if (pair.getKey().equals(name)) {
